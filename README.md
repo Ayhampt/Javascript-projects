@@ -5,22 +5,36 @@
 🌤️ Weather App
 
 Fetches and displays real-time weather data using the OpenWeather API
+
 Features location-based weather search
+
 Clean, minimal interface with responsive design
+
+
 💸 Expense Tracker
 
 Track expenses with auto-calculated totals
+
 Data persisted in local storage so it stays after page reloads.
+
 Built with pure JavaScript.
+
 🛒 E-commerce Shopping Cart
 
 Display products dynamically.
+
 Auto-updating cart totals.
+
 Cart data saved in local storage
+
 Responsive layout for mobile and desktop
+
 🛠️ Tech Stack
 
 HTML
+
 TailwindCSS
+
 JavaScript
+
 OpenWeather API (for the Weather App)
