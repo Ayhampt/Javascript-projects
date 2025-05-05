@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body
+    class="bg-stone-300 min-h-screen flex items-center justify-center font-sans"
+  >
+    <div class="container mx-auto p-4 md:p-8">
+      <div class="grid grid-cols-1 gap-4 max-w-3xl mx-auto">
+        <!-- Large header box -->
+        <div class="bg-black rounded-xl p-4 md:p-6 text-white">
+          <h1 class="text-xl md:text-2xl lg:text-3xl font-bold">
+            Weather Dashboard
+          </h1>
+          <div class="flex items-center">
+            <input
+              type="search"
+              name="City"
+              id="city"
+              class="w-full mt-4 p-2 rounded-lg bg-gray-800 text-white placeholder-gray-400 flex-1"
+              placeholder="Search for a city"
+            />
+            <button
+              id="get-Weather-btn"
+              class="bg-white hover:bg-green-400 hover:text-black text-black py-2 px-4 rounded-lg ml-4 mt-4"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+        <div class="hidden" id="Weather-data">
+          <div
+            class="grid grid-cols-1 md:grid-cols-6  gap-4 font-sans font-semibold"
+          >
+            <!-- Temperature box -->
+            <div class="bg-black rounded-xl p-4 md:p-6 col-span-3 text-white">
+              <h2 class="text-xl md:text-4xl mb-2">
+                City :
+                <span class="text-xl md:text-4xl mb-2" id="city-name"></span>
+              </h2>
+              <h2 class="text-lg md:text-xl mb-2">Current Temperature</h2>
+              <p class="text-3xl md:text-4xl font-bold" id="Temperature"></p>
+            </div>
+
+            <!-- Weather condition box -->
+            <div class="bg-black rounded-xl p-4 md:p-6 col-span-3 text-white">
+              <h2 class="text-lg md:text-xl mb-2">Conditions :</h2>
+              <p class="text-lg" id="description"></p>
+            </div>
+            <!-- Wind box -->
+            <div class="bg-black rounded-xl p-4 md:p-6 col-span-2 text-white">
+              <h2 class="text-lg md:text-xl mb-2">wind-speed</h2>
+              <p class="text-lg" id="wind-speed"></p>
+            </div>
+            <!-- Humidity box -->
+            <div class="bg-black rounded-xl p-4 md:p-6 col-span-2 text-white">
+              <h2 class="text-lg md:text-xl mb-2">Humidity</h2>
+              <p class="text-lg" id="humidity"></p>
+            </div>
+
+            <div class="bg-black rounded-xl p-4 md:p-6 col-span-2 text-white">
+              <h2 class="text-lg md:text-xl mb-2">Feels Like</h2>
+              <p class="text-lg" id="FeelsLike"></p>
+            </div>
+          </div>
+        </div>
+        <div class="hidden" id="error-message">
+          <div
+            class="bg-black rounded-xl p4 md:p-6 flex flex-col items-center justify-center"
+          >
+            <p class="text-lg p-4 md:text-xl mb-2 text-green-600">
+              City Data Loading.....
+            </p>
+          </div>
+        </div>
+
+        <div class="hidden" id="error-message-cityNotFound">
+          <div
+            class="bg-black rounded-xl p4 md:p-6 flex flex-col items-center justify-center"
+          >
+            <p class="text-lg p-4 md:text-xl mb-2 text-red-600">
+              City Not found
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

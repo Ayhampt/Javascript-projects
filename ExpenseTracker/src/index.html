@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+</head>
+<body class="flex justify-center items-center h-screen bg-gray-900" >
+  <div class=" flex items-center justify-center">
+<div class="bg-gray-800 p-6 rounded-lg shadow-lg max-w-xl w-full ">
+        <h1 class="text-2xl font-bold mb-4 text-amber-50">Track your Expense</h1>
+
+          <p class="text-gray-400">Account balance: <span class="text-green-400" id="balance">$0.00</span><span><button class="ml-50 cursor-pointer bg-black rounded-lg text-white px-1.5 py-1.5" id="changebalancebtn">change balance</button></span>
+            <input type="number" class="bg-gray-500 rounded-lg p-1 text-amber-50 w-[100px] hidden" id="inputchangeamount">
+            <button class="bg-green-600 text-white px-2 py-1 ml-2 rounded-lg hidden" id="inputamountbtn" >submit</button></p>
+          
+            
+        <div class="flex mt-4">
+          <form action="" id="expense-form">
+            <input type="text" placeholder="Add expense" class="bg-gray-700 text-white rounded-lg p-2 mr-2 focus:outline-none" id="expense-name">
+            <input type="number" placeholder="$ add amount" class="bg-gray-700 text-white rounded-lg p-2 focus:outline-none" id="expense-Amount">
+            <button type="submit" class="bg-amber-400 text-white rounded-lg p-2 ml-2" id="add-expense-btn">Add</button>
+          </form>
+        </div>
+
+        
+
+          <h2 class="text-2xl font-semibold mb-2 text-amber-50 mt-10">Expenses</h2>
+        <div class="mt-4  p-4" id="expense-list">
+           <!-- <div class="flex justify-between text-gray-300">
+                <span>Movie</span>
+                <span>$20</span>
+            </div>-->
+          
+            
+          </div>
+          <hr class="border border-gray-500 my-2 mx-4">
+          <div class="flex justify-between font-bold text-white">
+              <span>Total:</span>
+              <span id="total-amount">0.00</span>
+          </div>
+
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<footer class="fixed bottom-0 w-full bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2023 Expense Tracker By Ayham. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

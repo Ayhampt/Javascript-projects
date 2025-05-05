@@ -1,0 +1,39 @@
+@import "tailwindcss";
+/* Style for the expense list container */
+#expense-list {
+  margin-top: 20px;
+  padding: 10px;
+  
+}
+
+/* Style for individual expense items */
+#expense-list div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  color: wheat;
+  
+}
+
+/* Style for the expense name and amount */
+#expense-list span {
+  font-size: 16px;
+  color: wheat;
+  
+}
+
+/* Style for the delete button */
+#expense-list button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#expense-list button:hover {
+  background-color: #ff1a1a;
+}
